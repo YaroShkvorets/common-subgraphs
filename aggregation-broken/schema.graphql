@@ -1,0 +1,14 @@
+
+type Block @entity(timeseries: true) {
+  id: Int8!
+  timestamp: Timestamp!
+  hash: Bytes!
+  number: Int!
+}
+
+type Stats @aggregation(intervals: ["hour", "day"], source: "Block") {
+  id: Int8!
+  timestamp: Timestamp!
+
+  count: Int! @aggregate(fn: "count")
+}
