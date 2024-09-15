@@ -1,0 +1,15 @@
+[package]
+name = "substreams-entities"
+version = "0.1.0"
+description = "Substreams Entities"
+edition = "2021"
+authors = [
+    "Yaro <yaro@pinax.network>",
+]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+substreams = "0.5"
+substreams-entity-change = "1.3"

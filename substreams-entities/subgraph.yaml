@@ -1,0 +1,17 @@
+specVersion: 0.0.6
+description: Substreams Entities
+repository: https://github.com/yaroshkvorets/common-subgraphs.git
+schema:
+  file: ./schema.graphql
+
+dataSources:
+  - kind: substreams
+    name: entities
+    network: mainnet
+    source:
+      package:
+        moduleName: graph_out
+        file: ./substreams-entities-v0.1.0.spkg
+    mapping:
+      kind: substreams/graph-entities
+      apiVersion: 0.0.7

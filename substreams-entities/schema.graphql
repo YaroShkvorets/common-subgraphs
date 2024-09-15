@@ -1,0 +1,10 @@
+type Test @entity(immutable: true) {
+  id: ID!
+  str: String!
+  bool: Boolean!
+  int: Int!
+  bytes: Bytes!
+  # timestamp: Timestamp!
+  big_dec: BigDecimal!
+  big_int: BigInt!
+}
